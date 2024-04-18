@@ -21,5 +21,12 @@ namespace Email_client
         {
 
         }
+
+        private void buttonCompose_Click(object sender, EventArgs e)
+        {
+            ComposeEmail signUp = new ComposeEmail();
+            this.Hide();
+            signUp.Show();
+        }
     }
 }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Email_client
 {
-    public partial class SignUp : Form
+    public partial class ComposeEmail : Form
     {
-        public SignUp()
+        public ComposeEmail()
         {
             InitializeComponent();
+        }
+
+        private void guna2PictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

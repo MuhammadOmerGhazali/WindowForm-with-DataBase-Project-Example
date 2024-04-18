@@ -36,6 +36,9 @@
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Inboxify Backend">
+      <HintPath>..\Inboxify Backend\bin\Debug\Inboxify Backend.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -52,27 +55,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Inbox.cs">
+    <Compile Include="WinFormUI\ComposeEmail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inbox.Designer.cs">
+    <Compile Include="WinFormUI\ComposeEmail.Designer.cs">
+      <DependentUpon>ComposeEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormUI\Inbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormUI\Inbox.Designer.cs">
       <DependentUpon>Inbox.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignIn.cs">
+    <Compile Include="WinFormUI\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignIn.Designer.cs">
+    <Compile Include="WinFormUI\SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="SignUp.cs">
+    <Compile Include="WinFormUI\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignUp.Designer.cs">
+    <Compile Include="WinFormUI\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Inbox.resx">
+    <EmbeddedResource Include="WinFormUI\ComposeEmail.resx">
+      <DependentUpon>ComposeEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormUI\Inbox.resx">
       <DependentUpon>Inbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -84,10 +96,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SignIn.resx">
+    <EmbeddedResource Include="WinFormUI\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignUp.resx">
+    <EmbeddedResource Include="WinFormUI\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

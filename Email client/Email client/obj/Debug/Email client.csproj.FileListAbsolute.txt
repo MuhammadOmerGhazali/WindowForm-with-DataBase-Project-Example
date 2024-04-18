@@ -1,0 +1,17 @@
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email client.csproj.AssemblyReference.cache
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.ComposeEmail.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.Inbox.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.Properties.Resources.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.SignIn.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.SignUp.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email client.csproj.GenerateResource.cache
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email client.csproj.CoreCompileInputs.cache
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Email client.exe.config
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Email client.exe
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Email client.pdb
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Guna.UI2.dll
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email client.csproj.CopyComplete
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email client.exe
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email client.pdb
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Inboxify Backend.dll
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Inboxify Backend.pdb

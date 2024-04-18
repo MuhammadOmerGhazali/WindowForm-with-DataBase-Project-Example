@@ -5,6 +5,10 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email client", "Email client\Email client.csproj", "{72CE2F24-36A8-4611-B93D-92C934D9BD80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inboxify Backend", "Inboxify Backend\Inboxify Backend.csproj", "{0204427F-F1C3-44F0-8DA9-2B52E0F2BA07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAssessmentDB", "..\..\..\..\..\DB\Mid project\ProjectAssessmentDB\ProjectAssessmentDB\ProjectAssessmentDB.csproj", "{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{72CE2F24-36A8-4611-B93D-92C934D9BD80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72CE2F24-36A8-4611-B93D-92C934D9BD80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72CE2F24-36A8-4611-B93D-92C934D9BD80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0204427F-F1C3-44F0-8DA9-2B52E0F2BA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0204427F-F1C3-44F0-8DA9-2B52E0F2BA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0204427F-F1C3-44F0-8DA9-2B52E0F2BA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0204427F-F1C3-44F0-8DA9-2B52E0F2BA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
