@@ -14,164 +14,60 @@ namespace Email_client.DL
 {
     public class UsersDL
     {
-
-        public static List<Users> GetUserList()
+        public static void Add_User(Users user)
         {
-            List<Users> UserList = new List<Users>();
-            
-            try
-            {
-                SqlConnection con = new SqlConnection(Connection.connectionString);
-                con.Open ();
-                string query = "SELECT * From Users";
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader rdr = cmd.ExecuteReader ();
-                while (rdr.Read ()) 
-                {
-                    Users user = new Users (rdr.GetString(1),rdr.GetString(2),rdr.GetString(3));
-                    UserList.Add (user);
-                }
-                con.Close ();
-            }
-            catch(Exception ex)
-            {
-                return null;
-            }
-            return UserList;
+            SqlConnection connection = new SqlConnection(Connection.connectionString);
+            connection.Open();
+
+            string query = "INSERT INTO Users(Email, password, perms) VALUES (@Email, @password, @perms)";
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.Add(new SqlParameter("@Email", user.Get_Email()));
+            command.Parameters.Add(new SqlParameter("@password", user.Get_Password()));
+            command.Parameters.Add(new SqlParameter("@perms", user.Get_User_Perm()));
+            command.ExecuteNonQuery();
+            connection.Close();
         }
-
-        public static void Find_User(string email)
+        public static Users Check_Credentials(string email, string password)
         {
-            List<Users> UserList = new List<Users>();
-            try
+            using (SqlConnection connection = new SqlConnection(Connection.connectionString))
             {
-                SqlConnection con = new SqlConnection(Connection.connectionString);
-                con.Open();
-                string query = $"SELECT * From Users WHERE Email = {email}";
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader rdr = cmd.ExecuteReader();
-                if (rdr.Read())
+                connection.Open();
+                string query = "SELECT * FROM Users WHERE Email = @Email AND Password = @Password";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
                 {
-                    Users user = new Users(rdr.GetString(1), rdr.GetString(2), rdr.GetString(3));
-                    UserList.Add(user);
-                }
-                con.Close();
-                
-            }
-            catch (Exception ex) 
-            {
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@Password", password);
 
-            }
-        }
-        public static Users Check_Credentials(string email,string password)
-        {
-            foreach (Users user in GetUserList())
-            {
-                if (email == user.Get_Email() && user.Check_Password(password) == true)
-                {
-                    return user;
+                    using (SqlDataReader rdr = cmd.ExecuteReader())
+                    {
+                        if (rdr.Read())
+                        {
+                            return Connection.currentUser = new Users(rdr.GetString(1), rdr.GetString(2), rdr.GetString(3)  );
+                        }
+                    }
                 }
             }
             return null;
         }
-        public static List<Users> GetUserByPerms(string perms)
+        public static List<Users> GetUserList()
         {
-            List <Users> ListToBeReturned = new List <Users> ();
+            List<Users> UserList = new List<Users>();
 
-            foreach (Users user in GetUserList()) 
+            SqlConnection con = new SqlConnection(Connection.connectionString);
+            con.Open();
+            string query = "SELECT * From Users";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
             {
-                if (user.Get_User_Perm() == perms)
-                {
-                    ListToBeReturned.Add (user);
-                }
+                Users user = new Users(rdr.GetString(1), rdr.GetString(2), rdr.GetString(3));
+                UserList.Add(user);
             }
+            con.Close();
 
-            return ListToBeReturned;
+            return UserList;
         }
-        public static void Add_User(Users user)
-        {
-            try
-            {
-                SqlConnection connection = new SqlConnection(Connection.connectionString);
-                connection.Open();
 
-                if (connection.State == ConnectionState.Open)
-                {
-                    string query = "INSERT INTO Users(Email, password, perms) VALUES (@Email, @password, @perms)";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    
-                    command.Parameters.Add(new SqlParameter("@Email", user.Get_Email()));
-                    command.Parameters.Add(new SqlParameter("@password", user.Get_Password()));
-                    command.Parameters.Add(new SqlParameter("@perms", user.Get_User_Perm()));
-                    command.ExecuteNonQuery();
-                    connection.Close();
-                }
-                else
-                {
-
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-        }
-        public static void Remove_User(Users user)
-        {
-            try
-            {
-                SqlConnection connection = new SqlConnection(Connection.connectionString);
-                connection.Open();
-
-                if (connection.State == ConnectionState.Open)
-                {
-                    string query = "DELETE FROM Users WHERE UserId = (SELECT UserId FROM Student WHERE Email = @Email AND password = @password AND perms = @perms)";
-                    SqlCommand command = new SqlCommand(query, connection);
-
-                    command.Parameters.Add(new SqlParameter("@Email", user.Get_Email()));
-                    command.Parameters.Add(new SqlParameter("@password", user.Get_Password()));
-                    command.Parameters.Add(new SqlParameter("@perms", user.Get_User_Perm()));
-                    command.ExecuteNonQuery();
-                    connection.Close();
-                }
-                else
-                {
-
-                }
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-        public static void Change_user_password(string email,string newPassword,string oldPassword)
-        {
-            try
-            {
-                SqlConnection connection = new SqlConnection(Connection.connectionString);
-                connection.Open();
-
-                if (connection.State == ConnectionState.Open)
-                {
-                    string query = "UPDATE Users SET Email = @Email, password = @password WHERE UserID = (SELECT UserID FROM Users WHERE Email = @Email)";
-                    SqlCommand command = new SqlCommand(query, connection);
-
-                    command.Parameters.Add(new SqlParameter("@Email", email));
-                    command.Parameters.Add(new SqlParameter("@password", newPassword));
-                    command.ExecuteNonQuery();
-                    connection.Close();
-                }
-                else
-                {
-
-                }
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-        //public static void Update_userdata();
-        //public static void Save_userdata();
     }
 }

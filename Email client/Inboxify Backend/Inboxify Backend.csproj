@@ -41,11 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BL\Connection.cs" />
-    <Compile Include="BL\Users.cs" />
+    <Compile Include="BL\Emails\Account.cs" />
+    <Compile Include="BL\Emails\Bussiness_Email.cs" />
+    <Compile Include="BL\Emails\Personal_Email.cs" />
+    <Compile Include="BL\Users\Admin.cs" />
+    <Compile Include="BL\Utilities\Connection.cs" />
+    <Compile Include="BL\Emails\Email.cs" />
+    <Compile Include="BL\Users\EndUser.cs" />
+    <Compile Include="BL\Inbox.cs" />
+    <Compile Include="BL\Users\Users.cs" />
+    <Compile Include="DL\EmailDL.cs" />
+    <Compile Include="DL\InboxDL.cs" />
     <Compile Include="DL\UsersDL.cs" />
+    <Compile Include="Interfaces\IUserActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="t.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,11 +36,11 @@ namespace Email_client
 
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
-            BL.Connection.currentUser = DL.UsersDL.Check_Credentials(textEmail.Text, textPassword.Text);
-            if (BL.Connection.currentUser != null ) 
+
+            if (DL.UsersDL.Check_Credentials(textEmail.Text, textPassword.Text) != null ) 
             {
                 Inbox signUp = new Inbox();
-                this.Close();
+                this.Hide();
                 signUp.Show();
             }
             else
