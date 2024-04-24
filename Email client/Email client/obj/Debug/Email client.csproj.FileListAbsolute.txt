@@ -15,3 +15,11 @@ D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\Win
 D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email client.pdb
 D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Inboxify Backend.dll
 D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Inboxify Backend.pdb
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.WinFormUI.Emails.ViewEmail.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.WinFormUI.SignInEmail.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.WinFormUI.SignUpEmail.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.WinFormUI.AdminUI.AdminDashBoard.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Guna.Charts.WinForms.dll
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\bin\Debug\Guna.Charts.WinForms.xml
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.WinFormUI.Emails.Menus.HelpMenu.resources
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Email client\obj\Debug\Email_client.WinFormUI.Emails.Menus.UserMenu.resources

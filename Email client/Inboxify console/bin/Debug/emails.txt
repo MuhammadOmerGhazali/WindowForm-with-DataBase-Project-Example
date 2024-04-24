@@ -1,0 +1,4 @@
+1,johndoe@example.com,janedoe@example.com,Test Subject 1,This is the body of the first email.,Best regards,Inbox
+2,janedoe@example.com,johndoe@example.com,Test Subject 2,This is the body of the second email.,Regards,Inbox
+3,johndoe@example.com,janedoe@example.com,Test Subject 3,This is the body of the third email.,Sincerely,Inbox
+4,janedoe@example.com,johndoe@example.com,Test Subject 4,This is the body of the fourth email.,Best regards,Spam

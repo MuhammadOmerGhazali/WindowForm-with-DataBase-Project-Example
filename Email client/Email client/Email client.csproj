@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.9.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.0.9\lib\net472\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -55,36 +58,75 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="WinFormUI\ComposeEmail.cs">
+    <Compile Include="WinFormUI\AdminUI\AdminDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinFormUI\ComposeEmail.Designer.cs">
+    <Compile Include="WinFormUI\AdminUI\AdminDashBoard.Designer.cs">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormUI\Emails\ComposeEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormUI\Emails\ComposeEmail.Designer.cs">
       <DependentUpon>ComposeEmail.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinFormUI\Inbox.cs">
+    <Compile Include="WinFormUI\Emails\Inbox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinFormUI\Inbox.Designer.cs">
+    <Compile Include="WinFormUI\Emails\Inbox.Designer.cs">
       <DependentUpon>Inbox.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WinFormUI\SignIn.cs">
+    <Compile Include="WinFormUI\Emails\Menus\HelpMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinFormUI\SignIn.Designer.cs">
+    <Compile Include="WinFormUI\Emails\Menus\HelpMenu.Designer.cs">
+      <DependentUpon>HelpMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormUI\Emails\Menus\UserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormUI\Emails\Menus\UserMenu.Designer.cs">
+      <DependentUpon>UserMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormUI\Emails\ViewEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormUI\Emails\ViewEmail.Designer.cs">
+      <DependentUpon>ViewEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormUI\Login\SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormUI\Login\SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinFormUI\SignUp.cs">
+    <Compile Include="WinFormUI\Login\SignInEmail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinFormUI\SignUp.Designer.cs">
+    <Compile Include="WinFormUI\Login\SignInEmail.Designer.cs">
+      <DependentUpon>SignInEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormUI\Login\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormUI\Login\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="WinFormUI\ComposeEmail.resx">
+    <Compile Include="WinFormUI\Login\SignUpEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormUI\Login\SignUpEmail.Designer.cs">
+      <DependentUpon>SignUpEmail.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="WinFormUI\AdminUI\AdminDashBoard.resx">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormUI\Emails\ComposeEmail.resx">
       <DependentUpon>ComposeEmail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WinFormUI\Inbox.resx">
+    <EmbeddedResource Include="WinFormUI\Emails\Inbox.resx">
       <DependentUpon>Inbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -96,11 +138,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="WinFormUI\SignIn.resx">
+    <EmbeddedResource Include="WinFormUI\Emails\Menus\HelpMenu.resx">
+      <DependentUpon>HelpMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormUI\Emails\Menus\UserMenu.resx">
+      <DependentUpon>UserMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormUI\Emails\ViewEmail.resx">
+      <DependentUpon>ViewEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormUI\Login\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WinFormUI\SignUp.resx">
+    <EmbeddedResource Include="WinFormUI\Login\SignInEmail.resx">
+      <DependentUpon>SignInEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormUI\Login\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormUI\Login\SignUpEmail.resx">
+      <DependentUpon>SignUpEmail.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

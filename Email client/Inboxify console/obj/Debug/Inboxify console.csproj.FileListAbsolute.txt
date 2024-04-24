@@ -1,0 +1,7 @@
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Inboxify console\bin\Debug\Inboxify console.exe.config
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Inboxify console\bin\Debug\Inboxify console.exe
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Inboxify console\bin\Debug\Inboxify console.pdb
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Inboxify console\obj\Debug\Inboxify console.csproj.AssemblyReference.cache
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Inboxify console\obj\Debug\Inboxify console.csproj.CoreCompileInputs.cache
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Inboxify console\obj\Debug\Inboxify console.exe
+D:\university\lab_pr\2nd semester\OOP\.Bussiness proposal\Form Final Version\WindowForm-with-DataBase-Project-Example\Email client\Inboxify console\obj\Debug\Inboxify console.pdb

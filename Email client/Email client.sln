@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email client", "Email clien
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inboxify Backend", "Inboxify Backend\Inboxify Backend.csproj", "{0204427F-F1C3-44F0-8DA9-2B52E0F2BA07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAssessmentDB", "..\..\..\..\..\DB\Mid project\ProjectAssessmentDB\ProjectAssessmentDB\ProjectAssessmentDB.csproj", "{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inboxify console", "Inboxify console\Inboxify console.csproj", "{7455B982-4612-4FD3-B525-B2DC4A94B883}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{0204427F-F1C3-44F0-8DA9-2B52E0F2BA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0204427F-F1C3-44F0-8DA9-2B52E0F2BA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0204427F-F1C3-44F0-8DA9-2B52E0F2BA07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD1CEB4B-E46A-4DA2-AE7F-E6337644BD0E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7455B982-4612-4FD3-B525-B2DC4A94B883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7455B982-4612-4FD3-B525-B2DC4A94B883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7455B982-4612-4FD3-B525-B2DC4A94B883}.Release|Any CPU.ActiveCfg = Release|Any CPU

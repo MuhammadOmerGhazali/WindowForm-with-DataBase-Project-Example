@@ -26,6 +26,20 @@ namespace Email_client.BL
             this.email_footer = email_footer;
             this.tag = tag;
         }
+        public Email(int email_ID,string sender_email, string receiver_email, string email_subject, string email_body, string email_footer, string tag)
+        {
+            this.email_ID = email_ID;
+            this.sender_email = sender_email;
+            this.receiver_email = receiver_email;
+            this.email_subject = email_subject;
+            this.email_body = email_body;
+            this.email_footer = email_footer;
+            this.tag = tag;
+        }
+        public Email()
+        {
+
+        }
         public int Get_ID()
         {
             return this.email_ID;

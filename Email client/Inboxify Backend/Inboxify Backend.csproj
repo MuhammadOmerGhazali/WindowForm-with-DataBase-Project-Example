@@ -44,20 +44,28 @@
     <Compile Include="BL\Emails\Account.cs" />
     <Compile Include="BL\Emails\Bussiness_Email.cs" />
     <Compile Include="BL\Emails\Personal_Email.cs" />
-    <Compile Include="BL\Users\Admin.cs" />
+    <Compile Include="BL\User\Admin.cs" />
     <Compile Include="BL\Utilities\Connection.cs" />
     <Compile Include="BL\Emails\Email.cs" />
-    <Compile Include="BL\Users\EndUser.cs" />
+    <Compile Include="BL\User\EndUser.cs" />
     <Compile Include="BL\Inbox.cs" />
-    <Compile Include="BL\Users\Users.cs" />
-    <Compile Include="DL\EmailDL.cs" />
-    <Compile Include="DL\InboxDL.cs" />
-    <Compile Include="DL\UsersDL.cs" />
-    <Compile Include="Interfaces\IUserActions.cs" />
+    <Compile Include="BL\User\Users.cs" />
+    <Compile Include="DL\DB\EmailDL.cs" />
+    <Compile Include="DL\DB\User\EmailAccountDL.cs" />
+    <Compile Include="DL\DB\User\EndUserDL.cs" />
+    <Compile Include="DL\DB\InboxDL.cs" />
+    <Compile Include="DL\DB\User\AdminDL.cs" />
+    <Compile Include="DLInterfaces\IEmailAccount.cs" />
+    <Compile Include="DLInterfaces\IEmailDL.cs" />
+    <Compile Include="DLInterfaces\IUserDL.cs" />
+    <Compile Include="DLInterfaces\IUserActions.cs" />
+    <Compile Include="DLInterfaces\ObjectHandler.cs" />
+    <Compile Include="DL\FH\FileEmailDL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="t.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
